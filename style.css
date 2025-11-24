@@ -1,0 +1,69 @@
+#profile{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;  
+}
+#home{
+    font-family: "Press Start 2P",sans-serif;
+}
+#homelink {
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    gap: 5px;
+}
+#hello{
+    border-bottom: 3px solid black;
+}
+.tabs{
+    display: flex;
+    gap: 50px;
+    text-decoration: none;
+    
+}
+/* Remove underline for links inside .tabs (anchors have their own default underline) */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+.link:hover {
+    text-decoration: none;
+}
+.aboutme {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* hover alanı tam olsun */
+}
+
+.aboutme img, .aboutmetxt {
+    width: 100%;
+    height: 100%;
+    display: block; /* inline-gap kalmaz */
+    transition : transform 0.3s ease;
+}
+
+.aboutmetxt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.aboutme:hover img {
+    transform: scale(1.05);
+}
+
+.aboutme:hover .aboutmetxt {
+    opacity: 1;
+    background: rgba(0,0,0,0.9);
+}
