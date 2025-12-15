@@ -1,10 +1,57 @@
+body{
+    background-color: rgb(42, 43, 48);
+    margin: 0 10%;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 40px;}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 35px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    padding: 10px 40px ;
+    background-color: black;
+    flex-wrap: wrap;
+}
+.link {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+    gap: 10px;
+    font-family: "Press Start 2P",sans-serif;
+    text-decoration: none;
+}
+.link a {
+    color: white;
+    padding: 6px 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.link a:hover {
+    text-decoration: none;
+}
 #profile{
     width: 45px;
     height: 45px;
     border-radius: 50%;  
 }
-#home{
+#Home {
     font-family: "Press Start 2P",sans-serif;
+    color: white;
+    text-decoration: none;
 }
 #homelink {
     align-items: center;
@@ -13,22 +60,19 @@
     gap: 5px;
 }
 #hello{
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.tabs{
+.logo a{
+    font-weight:bold;
     display: flex;
-    gap: 50px;
-    text-decoration: none;
-    
-}
-/* Remove underline for links inside .tabs (anchors have their own default underline) */
-.link {
-    text-decoration: none;
-    color: inherit;
-}
-.link:hover {
+    gap: 5%;
+    font-size: 22px;
     text-decoration: none;
 }
+
+
 .aboutme {
     position: relative;
     width: 200px;
@@ -37,6 +81,7 @@
     padding: 0;
     margin: 0;
     display: inline-block; /* hover alanı tam olsun */
+    background-color: rgb(252, 249, 237);
 }
 
 .aboutme img, .aboutmetxt {
@@ -50,8 +95,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.6);
-    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,3 +112,58 @@
     opacity: 1;
     background: rgba(0,0,0,0.9);
 }
+#sentence{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+#teammembers{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.gates{
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    body{ 
+    margin: 0 1%;
+}
+    
+    .nav {
+        padding: 8px 0;          /* sağ-sol boşluk yok */
+        flex-wrap: wrap;
+    }
+    .link {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        gap: 0;                  /* aralarda boşluk yok */
+        flex-wrap: wrap;         /* sığmazsa alta */
+        justify-content: flex-start;
+    }
+    .link a {
+        padding: 1;      /* Home tam sola değsin */
+        margin: 0;
+        font-size: 12px;         /* mobil için */
+        white-space: normal;
+    }
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6px;
+    }
+    .logo h3 {
+        margin: 0;
+        color: white;
+        text-align: center;
+    }
+    .gates{
+    width: 100%;
+}
+}
+
+
