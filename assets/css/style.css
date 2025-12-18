@@ -46,7 +46,7 @@ h3{
 #profile{
     width: 45px;
     height: 45px;
-    border-radius: 50%;  
+    border-radius: 50%;
 }
 #Home {
     font-family: "Press Start 2P",sans-serif;
@@ -123,7 +123,7 @@ h3{
     font-size: 20px;
 }
 .gates{
-    width: 100%;
+    width: 80%;
 }
 
 .footer {
@@ -141,27 +141,57 @@ h3{
     text-decoration: none;
 }
 
+
+#c{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.github {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.codecademy {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+#codecademy {
+    width: 18px;
+    border-radius: 50%;
+}
+ #minecraft{
+    width: 500px
+ }
 @media (max-width: 768px) {
     body{ 
     margin: 0 1%;
 }
     
     .nav {
-        padding: 8px 0;          
+        padding: 8px 0;
         flex-wrap: wrap;
     }
     .link {
         width: 100%;
         margin-left: 0;
         padding-left: 0;
-        gap: 0;                  
-        flex-wrap: wrap;         
+        gap: 0;
+        flex-wrap: wrap;
         justify-content: flex-start;
     }
     .link a {
-        padding: 1;      
+        padding: 1;
         margin: 0;
-        font-size: 12px;         
+        font-size: 12px;
         white-space: normal;
     }
     .logo {
@@ -178,18 +208,4 @@ h3{
     .gates{
     width: 100%;
 }
-}
-#c{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-.github {
-    display: inline-flex;      
-    align-items: center;      
-    gap: 8px;                  
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
 }
