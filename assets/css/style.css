@@ -1,78 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: rgb(42, 43, 48);
-    margin: 0 10%;
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    line-height: 1.6;
 }
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 40px;}
-h2{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 35px;
-}
-h3{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 30px;
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 .nav{
+    background-color: white;
     display: flex;
     align-items: center;
-    padding: 10px 40px ;
-    background-color: black;
-    flex-wrap: wrap;
+    padding: 15px 20px ;
+    justify-content: space-between;
+    
 }
-.link {
-    display: flex;
-    margin-left: auto;
-    list-style: none;
-    gap: 10px;
-    font-family: "Press Start 2P",sans-serif;
+.nav-name{
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
     text-decoration: none;
 }
-.link a {
-    color: white;
-    padding: 6px 10px;
-    font-size: 16px;
+.nav-links{
     display: flex;
-    align-items: center;
-    gap: 5%;
+    gap: 20px;
 }
 
-.link a:hover {
+.nav-links a{
+    color: black;
     text-decoration: none;
+    font-size: 18px;
 }
-#profile{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-}
-#Home {
-    font-family: "Press Start 2P",sans-serif;
+.nav-links a.active {
+    background: #2563eb;
     color: white;
-    text-decoration: none;
 }
-#homelink {
-    align-items: center;
-    text-decoration: none;
-    display: flex;
-    gap: 5px;
+.menu-btn{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.profile{
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 #hello{
-    border-bottom: 3px solid rgb(255, 255, 255);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: blue;
 }
-.logo a{
-    font-weight:bold;
-    display: flex;
-    gap: 5%;
-    font-size: 22px;
+
+.links{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+.link{
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
     text-decoration: none;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
 }
-
-
+.link:hover {
+    transform: translateY(-5px);
+}
+.link i{
+    color: blue;
+    font-size: 40px;
+}
+.introduction{
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    color: #333;
+}
 .aboutme {
     position: relative;
     width: 200px;
@@ -83,37 +102,8 @@ h3{
     display: inline-block; 
     background-color: rgb(252, 249, 237);
 }
-
-.aboutme img, .aboutmetxt {
-    width: 100%;
-    height: 100%;
-    display: block; 
-    transition : transform 0.3s ease;
-}
-
-.aboutmetxt{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.6);
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.aboutme:hover img {
-    transform: scale(1.05);
-}
-
-.aboutme:hover .aboutmetxt {
-    opacity: 1;
-    background: rgba(0,0,0,0.9);
-}
 #sentence{
-    color: white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
 }
@@ -126,22 +116,20 @@ h3{
     width: 80%;
 }
 
+
 .footer {
-    background-color: black;
+    background: #1e293b;
+    color: white;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-family: "Press Start 2P",sans-serif;
+    padding: 30px 20px;
+    margin-top: 50px;
 }
+
 .footer a{
     color: white;
     margin: 0 15px;
     text-decoration: none;
 }
-
-
 #c{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -171,10 +159,11 @@ h3{
  #minecraft{
     width: 500px
  }
+
 @media (max-width: 768px) {
-    body{ 
-    margin: 0 1%;
-}
+    .menu-btn {
+        display: block;
+    }
     
     .nav {
         padding: 8px 0;

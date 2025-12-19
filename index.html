@@ -5,45 +5,55 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body> 
     <nav class="nav">
-    <div class="logo"><a href="index.html"><h3 id="Home">NEMAN</h3></a></div>
-        <ul class="link">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
-    </nav>
-    
-    <h1 id="hello">
-        Hello, my name is Neman Mustafazade. 
-        I am a Computer Science student at ADA University.
-    </h1>
-    <div class="aboutme"><img src="assets/images/konoha.jpg" alt="About Me" id="aboutme">
-        <div class="aboutmetxt">
-            <p>About Me</p>
+    <a href="index.html" class="nav-name">NEMAN</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
         </div>
-    </div>
-    <p id="sentence">
-        I graduated from Secondary School No. 5 in Goygol. During my school years, I attended after-school courses to achieve a strong result on the DIM exam in order to gain admission to ADA University. Fortunately, I achieved a score of 653 out of 700, which allowed me to be accepted into the Computer Science program at ADA University.
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
 
-After graduating from secondary school, I applied to ADA University through the EAPP (English for Academic Purposes Program). Currently, I am a first-year undergraduate student at ADA University, where I continue to develop my skills in academic writing, critical thinking, and project-based learning.
-    </p>
-    <h1>Projects</h1>
-    <a href="projects.html#project1"><h3>PROJECT 1: How Does Hardware Work?</h3></a>
-    <a href="projects.html#project2"><h3>PROJECT 2: Hour of Code</h3></a>
+    <main class="main">
+        <div class="profile">
+            <h1 id="hello">
+                Hello, my name is Neman Mustafazade. 
+            </h1>
+            <p>I am a Computer Science student at ADA University.</p>
+        </div>
 
-    <a href="about.html"><h1>About Me</h1></a>
+        <div class="introduction">
+            <p id="sentence">
+                I graduated from Secondary School No. 5 in Goygol. During my school years, I attended after-school courses to achieve a strong result on the DIM exam in order to gain admission to ADA University. Fortunately, I achieved a score of 653 out of 700, which allowed me to be accepted into the Computer Science program at ADA University.
+                After graduating from secondary school, I applied to ADA University through the EAPP (English for Academic Purposes Program). Currently, I am a first-year undergraduate student at ADA University, where I continue to develop my skills in academic writing, critical thinking, and project-based learning.
+            </p>
+        </div>
+
+        <div class="links">
+            <a href="about.html" class="link">
+                <i class="fas fa-user"></i>
+                <h3>About Me</h3>
+                <p>Learn more aboout me</p>
+            </a>
+            <a href="projects.html" class="link">
+                <i class="fas fa-code"></i>
+                <h3>My Projects</h3>
+                <p>See more about projects</p>
+            </a>
+
+        </div>
+    </main>
 
     <br><br><br><br>
     <footer class="footer">
         <a href="https://github.com/NemanMu" class="github"><i class="fab fa-github"></i>Github</a>
         <a href="https://www.codecademy.com/profiles/NemanM" class="codecademy"><img src="assets/images/codecademy.jpg" id="codecademy">Codecademy</i></a>
-        <a href="https://github.com/NemanMu/Project-3">Repository</a>
+        <a href="https://github.com/NemanMu/Project-3"><i class="fas fa-code"></i> Repository</a>
         <p id="c">© 2025 Neman Mustafazade</p>
     </footer>
-    
 </body>
 </html>
