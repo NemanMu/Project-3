@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="assets/js/menu.js" defer></script>
 </head>
-<body> 
+<body>
     <nav class="nav">
-        <div class="logo"><a href="index.html"><h3 id="Home">NEMAN</h3></a></div>
-        <ul class="link">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
+    <a href="index.html" class="nav-name">NEMAN</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+        </div>
+        <button class="menu-btn" onclick="Menu()">☰</button>
     </nav>
+    <main class="main">
+        <div class="introduction">
     <h1>MY PROJECTS</h1><br>
     <h2 id="project1">PROJECT 1: How Does Hardware Work?</h2>
     <p id="sentence"><b>Course:</b> SITE 1101 – Information Systems Principles</p>
@@ -27,40 +30,52 @@
         <li>Seljan Bashirli</li>
         <li>Ruslan Fatiyev</li>
     </ul>
+    
     <p id="sentence">
         In our SITE 1101 course, we explored how hardware works at the most fundamental level.
         We constructed basic logic gates NOT, AND, OR, XOR, and NAND using physical components like transistors, resistors, LEDs, and breadboards in our Net Lab.
         We could have worked on 3 different days to complete this project.
     </p>
-    <h1>NOT/AND/OR Gates</h1>
+        </div><br><br><br>
+
+    
+    <h1><span class="introduction">NOT/AND/OR Gates</span></h1><br>
+    <div class="introduction">
     <h2><b>First lab day:</b></h2>
     <p id="sentence">
          We created NOT, AND, and OR gates using transistors and resistors.
     </p>
     <h3>NOT Gate</h3>
-    <img src="assets/images/NOT.png" class="gates">
+    <img src="assets/images/NOT.png">
     <h3>AND Gate</h3>
-    <img src="assets/images/AND.png" class="gates">
+    <img src="assets/images/AND.png">
     <h3>OR Gate</h3>
-    <img src="assets/images/OR.png" class="gates"><br><br><br>
+    <img src="assets/images/OR.png">
+    </div><br><br><br>
+    
+    <div class="introduction">
     <h2><b>Second lab day:</b></h2>
     <p id="sentence">
     We created NAND gate together with group 17.
     </p>
     
     <h3>NAND Gate</h3>
-    <img src="assets/images/NAND.png" class="gates"><br><br><br>
+    <img src="assets/images/NAND.png" >
+    </div><br><br><br>
 
+    <div class="introduction">
     <h2><b>Third lab day:</b></h2>
     <p id="sentence">
         We created XOR gate together with groups 52, 53, and 81.
     </p>
     <h3>XOR Teams</h3>
-    <img src="assets/images/XORteam.png" class="gates"><br><br>
-    <img src="assets/images/XORteammembers.jpg" class="gates"><br><br>
+    <img src="assets/images/XORteam.png" ><br><br>
+    <img src="assets/images/XORteammembers.jpg" ><br><br>
     <h3>XOR Gate</h3>
-    <img src="assets/images/XOR.png" class="gates"><br><br>
+    <img src="assets/images/XOR.png">
+    </div><br><br><br>
 
+    <div class="introduction">
     <h2 id="project2">PROJECT 2: Hour of Code</h2>
     <p id="sentence"><b>Course:</b> SITE 1101 – Information Systems Principles</p>
     <p id="sentence">Team: Group 19</p>
@@ -78,6 +93,8 @@
         Our team handled everything from planning the lessons and coordinating with the community center and we presented certificates to the participants. 
     </p>
     <img src="assets/images/hourofcode.jpg" class="gates">
+    </div>
+    </main>
 
 
     
@@ -85,9 +102,8 @@
     <footer class="footer">
         <a href="https://github.com/NemanMu" class="github"><i class="fab fa-github"></i>Github</a>
         <a href="https://www.codecademy.com/profiles/NemanM" class="codecademy"><img src="assets/images/codecademy.jpg" id="codecademy">Codecademy</i></a>
-        <a href="https://github.com/NemanMu/Project-3">Repository</a>
+        <a href="https://github.com/NemanMu/Project-3"><i class="fas fa-code"></i> Repository</a>
         <p id="c">© 2025 Neman Mustafazade</p>
     </footer>
-    
 </body>
 </html>
